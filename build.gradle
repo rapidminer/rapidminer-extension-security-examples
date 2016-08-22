@@ -1,0 +1,28 @@
+buildscript {
+	repositories {
+	    jcenter()
+		maven { url 'https://maven.rapidminer.com/content/groups/public/' }
+	}
+}
+
+plugins { id 'com.rapidminer.extension' version '0.8.2' }
+
+// Define Maven artifact repositories
+repositories {
+    jcenter()
+	maven { url 'https://maven.rapidminer.com/content/groups/public/' }
+}
+
+extensionConfig {
+
+    name 'Security Examples'
+
+    dependencies {
+        rapidminer '7.2.0'
+    }
+}
+
+// Define third party library dependencies
+dependencies {
+	//compile 'com.google.guava:guava:18.0'
+}
